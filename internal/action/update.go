@@ -1,8 +1,6 @@
 package action
 
 import (
-	"fmt"
-	"runtime"
 
 	"github.com/gopasspw/gopass/internal/out"
 	"github.com/gopasspw/gopass/internal/updater"
