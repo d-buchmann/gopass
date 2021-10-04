@@ -1,4 +1,4 @@
-module github.com/d-buchmann/gopass
+module github.com/gopasspw/gopass
 
 go 1.16
 
