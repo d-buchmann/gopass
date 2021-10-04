@@ -22,10 +22,6 @@ func (s *Action) Update(c *cli.Context) error {
 		return nil
 	}
 
-	if runtime.GOOS == "windows" {
-		return fmt.Errorf("gopass update is not supported on windows (#1722)")
-	}
-
 	out.Printf(ctx, "⚒ Checking for available updates ...")
 	if err := updater.Update(ctx, s.version); err != nil {
 		return ExitError(ExitUnknown, err, "Failed to update gopass: %s", err)
